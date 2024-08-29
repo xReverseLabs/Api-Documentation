@@ -49,7 +49,7 @@ Welcome to the **xReverseLabs API** documentation! 🚀 This API provides variou
   }
   ```
 
-### 3. Subdomain Scanner
+### 2. Subdomain Scanner
 - **Endpoint**: `/subdomain`
 - **Method**: `GET`
 - **Description**: Scans and retrieves subdomains for a given domain.
@@ -70,8 +70,8 @@ Welcome to the **xReverseLabs API** documentation! 🚀 This API provides variou
     "total": 3
   }
   ```
-  
-  ### 3. Domain Grabber By Date
+
+### 3. Domain Grabber By Date
 - **Endpoint**: `/domainbydate`
 - **Method**: `GET`
 - **Description**: Scans and retrieves registered domains by date.
@@ -92,6 +92,30 @@ Welcome to the **xReverseLabs API** documentation! 🚀 This API provides variou
     ],
     "total": 3
   }
+  ```
+
+### 4. Reverse IPv6
+- **Endpoint**: `/reverse/ipv6`
+- **Method**: `GET`
+- **Description**: Retrieves the domains associated with a specific IPv6 address.
+- **Query Parameters**:
+  - `🔑 apiKey` (string, required) - Your API key.
+  - `🌐 ip` (string, required) - The IP address to reverse.
+- **Example**:
+  - `/reverse/ipv6?apiKey=freetrial&ip=100f:xxxxxxx`
+- **Response**:
+  ```json
+{
+  "ip": "100f:xxxxxxx",
+  "domains": [
+    "12stepsforlivingfree.com",
+    "1stclasscloud.com",
+    "1takesuccess.com",
+    "1to1speechtherapy.com",
+    "3tigermartialarts.com"
+	],
+  "total": 5
+}
   ```
 
 ## 📜 License
