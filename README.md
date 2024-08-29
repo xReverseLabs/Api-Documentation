@@ -104,7 +104,7 @@ Welcome to the **xReverseLabs API** documentation! 🚀 This API provides variou
 - **Example**:
   - `/reverse/ipv6?apiKey=freetrial&ip=100f:xxxxxxx`
 - **Response**:
-  ```json
+```json
 {
   "ip": "100f:xxxxxxx",
   "domains": [
@@ -116,7 +116,7 @@ Welcome to the **xReverseLabs API** documentation! 🚀 This API provides variou
 	],
   "total": 5
 }
-  ```
+```
 
 ## 📜 License
 
